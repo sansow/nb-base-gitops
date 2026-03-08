@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: nb-base-gitops-repository
+spec:
+  url: https://github.com/sansow/nb-base-gitops

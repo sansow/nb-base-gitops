@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nb-base-gitops
+  description: GitOps manifests for nb-base   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=nb-base
+    backstage.io/kubernetes-id: nb-base 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: nb-base
+spec:
+  type: gitops
+  owner: group:default/tssc 
+  lifecycle: experimental
+  dependsOn:
+    - component:nb-base
