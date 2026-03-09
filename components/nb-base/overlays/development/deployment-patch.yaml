@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay-cnhmj.apps.cluster-cnhmj.dynamic.redhatworkshops.io/tssc/nb-base:16e195ad31d4c3eeefd91658c0d9f645726b4a1d@sha256:0a40d78eb730c2dc24191df31c041788c3f4317336327876ce0382aa430c9478
+        - image: quay-cnhmj.apps.cluster-cnhmj.dynamic.redhatworkshops.io/tssc/nb-base:07b437cfadea7bc62240d69e5fa4aef01db700cc@sha256:1402ac8a6d4181783c1b4a88938f4218b7cc445b8fae5c9661f22dcb4437faa3
           name: container-image
